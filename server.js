@@ -16,3 +16,11 @@ const router = app.Router()
 //-----------------------------------------------
 // app configuration
 //------------------------------------------------
+
+//req.bodyP
+app.use(bodyParser.urlencoded( { extended: true } ))
+app.use(bodyParser.json())
+//client side
+app.use(cors())
+
+const data = require ('/data.json')
